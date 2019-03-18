@@ -1,3 +1,7 @@
+#fwiNET main program
+#created by Jayanth Mouli 2019
+
+###########################################################################################################################################
 import numpy
 import pandas
 from keras.models import Sequential
