@@ -1,3 +1,5 @@
+#convenience file that tests new date system
+
 import csv
 import datetime
 
