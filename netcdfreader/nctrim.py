@@ -1,11 +1,13 @@
+#MAIN PROGRAM to extract MERRA-2 values from NETCDF file based on lat, long values and geo indices
+
 import numpy as np
 import os
 from netCDF4 import Dataset
 
-dirname = '/home/jayanthmouli/Desktop/fire/netcdfreader/MERRA2'
+dirname = '/home/***/Desktop/fire/netcdfreader/MERRA2'
 
 
-
+#iterate through NETCDF files
 for filename in os.listdir(dirname):
 	if filename.endswith(".nc"): 
 		f = Dataset(dirname+'/'+filename)
