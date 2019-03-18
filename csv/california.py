@@ -1,5 +1,6 @@
-import csv
+#filter initial Kaggle dataset that included all 1.88 million US wildfires to fires in California
 
+import csv
 
 with open("out.csv", "r") as csvinput:
 	with open("revised.csv", "w") as csvoutput:
