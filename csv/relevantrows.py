@@ -1,3 +1,6 @@
+#trims initial csv file raw from sqlite conversion to relevent information for FWI calculations (precipitation, moisture, relative humidity, etc.)
+
+
 import csv
 import datetime
 import numpy as np
@@ -6,7 +9,7 @@ from netCDF4 import Dataset
 
 
 def core():
-	dirname = '/home/jayanthmouli/Desktop/fire/netcdfreader/MERRA2'
+	dirname = '/home/***/Desktop/fire/netcdfreader/MERRA2'
 
 
 	with open("merrafires2015.csv", "r") as csvinput:
