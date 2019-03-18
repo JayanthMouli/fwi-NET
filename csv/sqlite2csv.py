@@ -1,3 +1,4 @@
+#convert Kaggle dataset '1.88 million US wildfires' to usable csv 
 import sqlite3
 
 with open('/Desktop/fire/fire.csv', 'w+') as write_file:
