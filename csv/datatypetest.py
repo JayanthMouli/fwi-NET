@@ -1,3 +1,5 @@
+#convenience method to find data type within csv
+
 import csv
 
 with open("aptcolumns2015.csv", "r") as csvinput:
