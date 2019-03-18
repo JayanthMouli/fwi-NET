@@ -1,9 +1,7 @@
+#using input NETCDF file from GFWED, use pandas Series to export each variable (column) as seperate csv files for testing purposes
+
 import netCDF4
 import pandas as pd
-
-
-
-
 
 f = netCDF4.Dataset('/home/jayanthmouli/Desktop/fire/netcdfreader/FWI.MERRA2.CORRECTED.Daily.Default.20150131.nc')
 
