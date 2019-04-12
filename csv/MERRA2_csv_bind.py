@@ -1,3 +1,6 @@
+#EXTRACT MERRA DATA TO USABLE FORMAT (FLOAT AND CSV)
+
+
 import csv
 import datetime
 import numpy as np
