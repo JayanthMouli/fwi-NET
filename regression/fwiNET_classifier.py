@@ -1,3 +1,7 @@
+#fwiNET main program
+#created by Jayanth Mouli 2019
+
+###########################################################################################################################################
 import numpy as np
 import pandas
 from keras.layers import Dense, Activation
@@ -18,14 +22,18 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.08, rand
 
 #initialize regressor as RF classifier
 regressor = RandomForestClassifier(n_estimators=20, random_state=0) 
+
 #train regressor
 regressor.fit(X_train, y_train)  
+
 #predict test array
 y_pred = regressor.predict(X_test)
+
 #print accuracy metrics
 print(confusion_matrix(y_test,y_pred))  
 print(classification_report(y_test,y_pred))  
 print(accuracy_score(y_test, y_pred)) 
+
 #predict test array
 finalpred = regressor.predict(X)
 
@@ -36,8 +44,10 @@ for x in range(0,6000): #test the first 6000  elements of the data (total data i
 		n1 = n1 + 1
 	else:      #prediction is incorrect
 		n2 = n2 + 1
+		
 #concatonate string		
 s = 'accuracy = ' + str(n1) + '/' + str(n1+n2)
+
 #plot results as bar graph
 plt.bar(['Correct Classification','Incorrect Classification'], [n1, n2])
 plt.title('Random Forest Classification Results')
