@@ -1,4 +1,4 @@
-#fwiNET main program
+#fwiNET multilayer perceptron regressor
 #created by Jayanth Mouli 2019
 
 ###########################################################################################################################################
