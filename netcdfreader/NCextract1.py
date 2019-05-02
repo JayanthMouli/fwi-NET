@@ -4,7 +4,7 @@ import numpy as np
 import os
 from netCDF4 import Dataset
 
-dirname = '/home/***/Desktop/fire/netcdfreader/MERRA2'
+dirname = '*******************'
 
 
 #iterate through NETCDF files
